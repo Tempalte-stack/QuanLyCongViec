@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Công Việc</title>
+
+    <link rel="stylesheet" href="Style.css">
+    
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>
+        <i class="fa-solid fa-list-check"></i>
+        Quản Lý Công Việc
+    </h1>
+
+    <div class="input-group">
+        <input type="text"
+               id="taskInput"
+               placeholder="Nhập công việc...">
+
+        <button onclick="addTask()">
+            <i class="fa-solid fa-plus"></i>
+            Thêm
+        </button>
+    </div>
+
+    <div class="search-box">
+        <input type="text"
+               id="searchInput"
+               placeholder="Tìm kiếm công việc..."
+               onkeyup="searchTask()">
+    </div>
+
+    <ul id="taskList"></ul>
+
+</div>
+
+<div id="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
